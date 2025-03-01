@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Mi lista de tareas</h1>
+
+    <form id="taskForm">
+        <input type="text" id="title" placeholder="Título de la tarea" required>
+        <input type="date" id="date" required>
+        <select id="status">
+            <option value="Pendiente">Pendiente</option>
+            <option value="En progreso">En progreso</option>
+            <option value="Completada">Completada</option>
+        </select>
+        <button type="submit">Crear tarea</button>
+    </form>
+
+    <div id="taskList"></div>
+
+    <h2>Sobre mí</h2>
+    <img src="perfil.jpg" alt="Foto de presentación" class="profile-pic">
+    <p>Estudiante de Ingeniería de Sistemas en la Universidad Santiago de Cali.</p>
+
+    <script src="index.js"></script>
+</body>
+</html>
